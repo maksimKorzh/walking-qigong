@@ -337,7 +337,7 @@ steps = [
   },
 ]
 
-styles = ['bagua', 'taiji', 'taiji', 'qigong', 'xiayao']
+styles = ['bagua', 'taiji', 'qigong', 'xiayao']
 goals = ['invocation', 'workout', 'coordination', 'relaxation']
 uniqueness = ['original', 'derivative']
 cmk = ['True', 'False']

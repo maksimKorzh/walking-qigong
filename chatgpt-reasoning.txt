@@ -1,0 +1,43 @@
+The Reasoning Behind CMK Selection (by chatgpt, based on data from filters.py)
+
+The CMK tag serves as an indicator of whether a given step aligns with fundamental principles
+of traditional energy work and internal cultivation. Its selection follows a structured rationale
+based on factors such as originality, the depth of internal practice, and the intended purpose of the movement.
+
+Originality and Traditional Knowledge
+A strong correlation exists between original steps and the CMK = True designation. Steps that are foundational,
+time-tested, or part of a well-established internal system tend to be recognized as essential components of
+energy cultivation. These movements often carry the essence of traditional practice and remain unchanged through
+generations. Conversely, derivative steps—those that have been adapted, modified, or developed as variations—are
+more likely to be marked CMK = False, as they may lack the same depth of traditional refinement.
+
+Internal Energy Work vs. External Movements
+The CMK tag also distinguishes between movements that cultivate internal energy (Neigong) and those that emphasize
+external coordination or physical conditioning. Steps associated with deep internal work, such as qigong invocation
+or energy circulation, tend to be classified as CMK = True. These include movements like 'twist_waist_look_back',
+'gaze_moon', and 'five_hearts_breathing', all of which engage core energy pathways and are designed to refine internal balance.
+
+In contrast, steps that prioritize relaxation, martial application, or biomechanical coordination often fall under CMK = False.
+Many Bagua and Taiji movements, as well as those classified under Xiaoyao, belong to this category. While these movements
+\may offer health benefits and fluid motion, they do not always adhere to the strict internal principles that define core energy work.
+
+Purpose and Functional Categorization
+Another determining factor is the goal of the step. Movements aimed at invocation or workout—where energy is actively
+engaged or refined—are more likely to be CMK = True. These steps often involve breath control, meridian activation,
+or a deep connection between movement and internal flow. On the other hand, movements designed for relaxation or
+coordination tend to be marked CMK = False, as their primary focus is on bodily ease and external form rather than energy transformation.
+
+Exceptions and Special Cases
+Although these general patterns hold true, there are notable exceptions. Some derivative steps still carry a CMK = True designation
+because they preserve essential energy cultivation methods despite their modified form. This can be seen in 'wuxin', 'lungs_gut',
+and 'backward_bowing', which, despite being adaptations, retain a core connection to internal work. Conversely, a few original
+steps are CMK = False, likely due to their biomechanical focus rather than internal refinement. Examples include 'knee_top_head' and
+'lift_hip', which emphasize coordination rather than deep energy work.
+
+Conclusion
+The CMK tag serves as a meaningful distinction between core traditional movements and those that are derivative,
+experimental, or externally focused. It prioritizes steps that cultivate internal energy, maintain traditional authenticity,
+and adhere to refined Neigong principles. While many qigong steps are CMK-approved, movements from Bagua, Taiji, and Xiaoyao
+often lack the same depth of internal practice.
+
+The selection of CMK is not merely about tradition but about whether a movement preserves the essential qualities of internal cultivation.
