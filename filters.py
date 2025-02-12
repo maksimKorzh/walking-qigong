@@ -43,10 +43,10 @@ steps = [
   },
   {
     'name': 'forward_weight',
-    'style': 'bagua',
+    'style': 'qigong',
     'goal': 'workout',
     'uniquness': 'derivative',
-    'cmk': 'False',
+    'cmk': 'True',
   },
   {
     'name': 'backward',
@@ -342,25 +342,28 @@ goals = ['invocation', 'workout', 'coordination', 'relaxation']
 uniqueness = ['original', 'derivative']
 cmk = ['True', 'False']
 
-def sort_by_style(select): return '\n'.join([[step['name'] for step in steps if step['style'] == select] for style in styles][0])
-def sort_by_goal(select): return '\n'.join([[step['name'] for step in steps if step['goal'] == select] for goal in goals][0])
-def sort_by_uniqueness(select): return '\n'.join([[step['name'] for step in steps if step['uniquness'] == select] for unique in uniqueness][0])
-def sort_by_cmk(select): return '\n'.join([[step['name'] for step in steps if step['cmk'] == select] for c in cmk][0])
+def sort_by_style(select): return '\n    '.join([[step['name'] for step in steps if step['style'] == select] for style in styles][0]).replace('_', ' ')
+def sort_by_goal(select): return '\n    '.join([[step['name'] for step in steps if step['goal'] == select] for goal in goals][0]).replace('_', ' ')
+def sort_by_uniqueness(select): return '\n    '.join([[step['name'] for step in steps if step['uniquness'] == select] for unique in uniqueness][0]).replace('_', ' ')
+def sort_by_cmk(select): return '\n    '.join([[step['name'] for step in steps if step['cmk'] == select] for c in cmk][0]).replace('_', ' ')
 
-print('\n\n BY STYLE:')
-print('\n\nBagua steps (' + str(len(sort_by_style('bagua').split('\n'))) + ')\n\n' + sort_by_style('bagua'))
-print('\n\nTaiji steps (' + str(len(sort_by_style('taiji').split('\n'))) + ')\n\n' + sort_by_style('taiji'))
-print('\n\nQigong steps (' + str(len(sort_by_style('qigong').split('\n'))) + ')\n\n' + sort_by_style('qigong'))
-print('\n\nXiaoyao steps (' + str(len(sort_by_style('xiaoyao').split('\n'))) + ')\n\n' + sort_by_style('xiaoyao'))
-print('\n\n BY GOAL:')
-print('\n\nInvocation steps (' + str(len(sort_by_goal('invocation').split('\n'))) + ')\n\n' + sort_by_goal('invocation'))
-print('\n\nWorkout steps (' + str(len(sort_by_goal('workout').split('\n'))) + ')\n\n' + sort_by_goal('workout'))
-print('\n\nCoordination steps (' + str(len(sort_by_goal('coordination').split('\n'))) + ')\n\n' + sort_by_goal('coordination'))
-print('\n\nRelaxation steps (' + str(len(sort_by_goal('relaxation').split('\n'))) + ')\n\n' + sort_by_goal('relaxation'))
-print('\n\n BY UNIQUNESS:')
-print('\n\nOriginal steps (' + str(len(sort_by_uniqueness('original').split('\n'))) + ')\n\n' + sort_by_uniqueness('original'))
-print('\n\nDerivative steps (' + str(len(sort_by_uniqueness('derivative').split('\n'))) + ')\n\n' + sort_by_uniqueness('derivative'))
-print('\n\n BY CMK:')
-print('\n\nCMK steps (' + str(len(sort_by_cmk('True').split('\n'))) + ')\n\n' + sort_by_cmk('True'))
-print('\n\nOther steps (' + str(len(sort_by_cmk('False').split('\n'))) + ')\n\n' + sort_by_cmk('False'))
-print('\n\nTotal of ' + str(len(steps)) + ' steps\n\n')
+contents = ''
+contents += '# BY STYLE:'
+contents += '\n   Bagua steps (' + str(len(sort_by_style('bagua').split('\n'))) + ')\n\n    ' + sort_by_style('bagua')
+contents += '\n\n    Taiji steps (' + str(len(sort_by_style('taiji').split('\n'))) + ')\n\n    ' + sort_by_style('taiji')
+contents += '\n\n    Qigong steps (' + str(len(sort_by_style('qigong').split('\n'))) + ')\n\n    ' + sort_by_style('qigong')
+contents += '\n\n    Xiaoyao steps (' + str(len(sort_by_style('xiaoyao').split('\n'))) + ')\n\n    ' + sort_by_style('xiaoyao')
+contents += '\n\n# BY GOAL:'
+contents += '\n\n    Invocation steps (' + str(len(sort_by_goal('invocation').split('\n'))) + ')\n\n    ' + sort_by_goal('invocation')
+contents += '\n\n    Workout steps (' + str(len(sort_by_goal('workout').split('\n'))) + ')\n\n    ' + sort_by_goal('workout')
+contents += '\n\n    Coordination steps (' + str(len(sort_by_goal('coordination').split('\n'))) + ')\n\n    ' + sort_by_goal('coordination')
+contents += '\n\n  Relaxation steps (' + str(len(sort_by_goal('relaxation').split('\n'))) + ')\n\n    ' + sort_by_goal('relaxation')
+contents += '\n\n# BY UNIQUNESS:'
+contents += '\n\n    Original steps (' + str(len(sort_by_uniqueness('original').split('\n'))) + ')\n\n    ' + sort_by_uniqueness('original')
+contents += '\n\n    Derivative steps (' + str(len(sort_by_uniqueness('derivative').split('\n'))) + ')\n\n    ' + sort_by_uniqueness('derivative')
+contents += '\n\n# BY CMK:'
+contents += '\n\n    CMK steps (' + str(len(sort_by_cmk('True').split('\n'))) + ')\n\n    ' + sort_by_cmk('True')
+contents += '\n\n    Other steps (' + str(len(sort_by_cmk('False').split('\n'))) + ')\n\n    ' + sort_by_cmk('False')
+contents += '\n\n    Total of ' + str(len(steps)) + ' steps\n\n'
+
+with open('README.md', 'w') as f: f.write(contents)
